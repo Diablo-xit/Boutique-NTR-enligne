@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title> NTR COMPAGNIE</title>
+    <style>
+    body{
+      background:pink;
+   
+        
+    }
+      .ok{
+        padding:20px;
+        align-items: center;
+        display:flex;
+        justify-content:start;
+        background:rgba(255,255,255,0.5);
+        min-width:200px;
+        min-height:100px;
+      }
+      .ce{
+       height:100vh;
+       width:200px;
+       background:#333;
+       padding:30px;
+       min-width:200px;
+       max-width:1700px;
+       min-height:400px;
+       max-height:1800px;
+      }
+    </style>
+  
+  </head>
+  <body>
+    <div class="ok">
+ <input type="text" id="user"placeholder="chercher..."><br>
+ <p id="demo"></p>
+ <button onclick="send()">send</button>
+    </div>
+    <br>
+    <h1 style="color:blue;">Achat en ligne </h1>
+    <p>Bienvenue sûre nôtre site de vente en ligne !</p>
+    <div class="ce">
+      
+    </div>
+ <script>
+   
+   function send(){
+   const usertext = document.getElementById('user');
+ const   demo = document.getElementById('demo');
+ demo.innerHTML=`donne:${usertext.value}`;
+  usertext.value="";
+   }
+   
+ </script>
+  </body>
+</html>
